@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gray"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. The hardest stone in the world is ..." />
+
+    <CheckBox
+        android:id="@+id/cgems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:text="Gems" />
+
+    <CheckBox
+        android:id="@+id/cdiamond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cgems"
+        android:layout_below="@+id/cgems"
+        android:text="Diamond" />
+
+    <CheckBox
+        android:id="@+id/cbasalt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cdiamond"
+        android:layout_below="@+id/cdiamond"
+        android:text="Basalt" />
+
+    <CheckBox
+        android:id="@+id/cgold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbasalt"
+        android:layout_below="@+id/cbasalt"
+        android:text="Gold" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cgold"
+        android:layout_alignRight="@+id/cbasalt"
+        android:layout_below="@+id/cgold"
+        android:layout_marginTop="17dp"
+        android:text="Submit"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:layout_alignLeft="@+id/cgold"
+        android:layout_alignRight="@+id/cbasalt"
+        android:layout_below="@+id/submit"
+        android:onClick="goTosoal3Activity"/>
+
+    <TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_below="@+id/next"
+        android:layout_marginTop="30dp"
+        android:text="your score is... "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

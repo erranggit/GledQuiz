@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gray"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. .... is the qurrency of Iraq" />
+
+    <CheckBox
+        android:id="@+id/cdinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:text="Dinar" />
+
+    <CheckBox
+        android:id="@+id/cpeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cdinar"
+        android:layout_below="@+id/cdinar"
+        android:text="Peso" />
+
+    <CheckBox
+        android:id="@+id/cbaht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cpeso"
+        android:layout_below="@+id/cpeso"
+        android:text="Baht" />
+
+    <CheckBox
+        android:id="@+id/cbolivar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbaht"
+        android:layout_below="@+id/cbaht"
+        android:text="Bolivar" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbolivar"
+        android:layout_alignRight="@+id/cbolivar"
+        android:layout_below="@+id/cbolivar"
+        android:layout_marginTop="17dp"
+        android:text="Submit"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:layout_alignLeft="@+id/cbolivar"
+        android:layout_alignRight="@+id/cbolivar"
+        android:layout_below="@+id/submit"
+        android:onClick="goTosoal6Activity"/>
+
+    <TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_below="@+id/next"
+        android:layout_marginTop="30dp"
+        android:text="your score is... "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

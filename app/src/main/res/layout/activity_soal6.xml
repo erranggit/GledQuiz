@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gray"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. Where do tulips come from?" />
+
+    <CheckBox
+        android:id="@+id/cholland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:text="Holland" />
+
+    <CheckBox
+        android:id="@+id/cturkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cholland"
+        android:layout_below="@+id/cholland"
+        android:text="Turkey" />
+
+    <CheckBox
+        android:id="@+id/cspain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cturkey"
+        android:layout_below="@+id/cturkey"
+        android:text="Spain" />
+
+    <CheckBox
+        android:id="@+id/cmaladewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cspain"
+        android:layout_below="@+id/cspain"
+        android:text="Maladewa" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cmaladewa"
+        android:layout_alignRight="@+id/cturkey"
+        android:layout_below="@+id/cmaladewa"
+        android:layout_marginTop="17dp"
+        android:text="Submit"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:layout_alignLeft="@+id/cmaladewa"
+        android:layout_alignRight="@+id/cturkey"
+        android:layout_below="@+id/submit"
+        android:onClick="goToMainActivity"/>
+
+    <TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_below="@+id/next"
+        android:layout_marginTop="30dp"
+        android:text="your score is... "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

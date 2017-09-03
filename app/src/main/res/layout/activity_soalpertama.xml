@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gray"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. The Earth also travels around the sun in a path called an orbit. The motion around the sun along its orbit is called a ..." />
+
+    <CheckBox
+        android:id="@+id/crevolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="40dp"
+        android:text="Earth's Revolution" />
+
+    <CheckBox
+        android:id="@+id/crotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crevolution"
+        android:layout_below="@+id/crevolution"
+        android:text="Earth's Rotation" />
+
+    <CheckBox
+        android:id="@+id/corbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crotation"
+        android:layout_below="@+id/crotation"
+        android:text="Earth's Orbit" />
+
+    <CheckBox
+        android:id="@+id/cphase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/corbit"
+        android:layout_below="@+id/corbit"
+        android:text="Earth's Phase" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cphase"
+        android:layout_alignRight="@+id/corbit"
+        android:layout_below="@+id/cphase"
+        android:layout_marginTop="17dp"
+        android:text="Submit"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:layout_alignLeft="@+id/cphase"
+        android:layout_alignRight="@+id/corbit"
+        android:layout_below="@+id/submit"
+        android:onClick="goTosoalkeduaActivity"/>
+
+    <TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_below="@+id/next"
+        android:layout_marginTop="30dp"
+        android:text="your score is... "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
